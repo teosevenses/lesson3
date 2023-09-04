@@ -26,8 +26,8 @@ end
 #делим на грузовые и пассажирские
 
 def trains_types(type) 
-  @trains.select { | train | train.type == type} End
-
+  @trains.select { | train | train.type == type}
+  end
 end
 
 
