@@ -25,11 +25,8 @@ end
 
 #делим на грузовые и пассажирские
 
-def types_trains(train)
-if
-  trains.partition {|train| train == "cargo"}
-else 
-  puts "passenger"
+def trains_types(type) 
+  @trains.select { | train | train.type == type} End
 
 end
 
