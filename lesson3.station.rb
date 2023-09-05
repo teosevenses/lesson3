@@ -10,23 +10,23 @@ attr_accessor :name, :trains
 
 #вводим в пустой массив приезжающий поезд
   def arrive(train)
-   @trains << train
+    @trains << train
   end
 
 #удаляем из массива поезд который уехал
   def send(train)
-   trains.delete(train)
+    trains.delete(train)
   end
 
 #показывает какие поезда на станции
   def show_trains
-   trains.each {|train|} train}
+    trains.each {|train|} train}
   end
 
 #делим на грузовые и пассажирские
 
   def trains_types(type) 
-   @trains.select { | train | train.type == type}
+    @trains.select { | train | train.type == type}
   end
 end
 
